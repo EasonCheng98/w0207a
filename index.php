@@ -2,7 +2,6 @@
 <a href="index.php">Home</a>
 <?php
 
-
-echo "Hello World";
+echo "Hello ABC Company";
 
 ?>
