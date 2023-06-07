@@ -1,8 +1,15 @@
 <?php
-include "Game.php";
-include "Animal.php";
-include "Rabbit.php";
-include "Tortoise.php";
+// include "Game.php";
+// include "Animal.php";
+// include "Rabbit.php";
+// include "Tortoise.php";
+
+
+spl_autoload_register(function ($classname) {
+    // 它开始include所有 upper case开头的 并且是.php的
+    include ucfirst($classname) . '.php';
+});
+
 
 $rabbit = new Rabbit("Rabbit"); // 实现class为Rabbit 并赋予名字为Rabbit 
 $tortoise = new Tortoise("Tortoise");// 实现class为TortoiseTortoise 
