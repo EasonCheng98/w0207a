@@ -50,13 +50,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 // $route['default_controller'] = 'welcome';
-$route['default_controller'] = 'frontend/home'; //就是把default得页面 换成frontend/home的
+$route['default_controller'] = 'frontend/home'; 
+$route['dashboard'] = 'backend/dashboard'; 
+$route['login'] = 'login/index'; 
 
-//网址只打index.php/product_list 就会show product_list的页面
-$route['product_list'] = 'frontend/product_list';
+
+
+$route['addcart'] = 'frontend/addcart';
+$route['addcartAPI'] = 'frontend/addcartAPI';
+
+$route['getProductAPI'] = 'frontend/getProductAPI';
+$route['getProductAPI/(:num)'] = 'frontend/getProductAPI/$1';
+
 //网址只打index.php/product_details 就会show product_details的页面
 // /(:num)意思是后面会有id           /$1 意思是会带参数进来
-$route['product_details/(:num)'] = 'frontend/product_details/$1';  
+$route['product_details/(:num)'] = 'frontend/product_details/$1';
+$route['product_list'] = 'frontend/product_list'; // default 第一页的网址
+$route['product_list/(:num)'] = 'frontend/product_list/$1';  
 
 
 

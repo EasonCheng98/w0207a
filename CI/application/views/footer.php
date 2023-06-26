@@ -183,5 +183,27 @@
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="<?=base_url('assets/template/js/custom.js')?>"></script>
 
+
+
+		<script>
+			function addCartAJAX(product_id)
+			{
+				console.log(product_id);
+
+				// $.post("demo_ajax_gethint.asp", {suggest: txt}, function(result){
+				$.post("<?=base_url('addcartAPI')?>", {qty:1, product_id:product_id}, function(result){
+					console.log(result);
+					result = JSON.parse(result); // 把JSON string convert to JavaScript object or value
+					if(result.status == "OK"){
+						alert("Add Cart Successfully");
+					}else{
+						alert("Something Wrong");
+					}
+				})
+
+			}
+		</script>
+
+
 	</body>
 </html>

@@ -201,7 +201,7 @@
 													<p class="small"><?=$v['brief']?></p>
 													<div class="elements-list clearfix">
 														<span class="price">$<?=$v['price']?></span>
-														<a href="#" class="pull-right margin-clear btn btn-sm btn-default-transparent btn-animated">Add To Cart<i class="fa fa-shopping-cart"></i></a>
+														<a href="javascript:;" onclick="addCartAJAX('<?=$v['id']?>')" class="pull-right margin-clear btn btn-sm btn-default-transparent btn-animated">Add To Cart<i class="fa fa-shopping-cart"></i></a>
 													</div>
 												</div>
 											</div>
@@ -238,7 +238,7 @@
 													<p class="small"><?=$v['brief']?></p>
 													<div class="elements-list clearfix">
 														<span class="price">$<?=$v['price']?></span>
-														<a href="#" class="pull-right margin-clear btn btn-sm btn-default-transparent btn-animated">Add To Cart<i class="fa fa-shopping-cart"></i></a>
+														<a href="javascript:;" onclick="addCartAJAX('<?=$v['id']?>')" class="pull-right margin-clear btn btn-sm btn-default-transparent btn-animated">Add To Cart<i class="fa fa-shopping-cart"></i></a>
 													</div>
 												</div>
 											</div>
@@ -275,7 +275,7 @@
 													<p class="small"><?=$v['brief']?></p>
 													<div class="elements-list clearfix">
 														<span class="price">$<?=$v['price']?></span>
-														<a href="#" class="pull-right margin-clear btn btn-sm btn-default-transparent btn-animated">Add To Cart<i class="fa fa-shopping-cart"></i></a>
+														<a href="javascript:;" onclick="addCartAJAX('<?=$v['id']?>')" class="pull-right margin-clear btn btn-sm btn-default-transparent btn-animated">Add To Cart<i class="fa fa-shopping-cart"></i></a>
 													</div>
 												</div>
 											</div>
